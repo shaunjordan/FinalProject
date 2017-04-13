@@ -1,1 +1,62 @@
+/*
+  Project: CIS-130 Final Project
+  Author: Shaun Jordan
+  Filename: main.css
+  Date: 13-APR-2017
+*/
+/*body section */
+html {
+  min-height: 100%;
+  position: relative;
+}
 
+body {
+  margin-bottom: 50px;
+}
+/* end body section */
+
+/* header section */
+header {
+  margin-bottom: .5em;
+}
+h1 {
+  background: beige;
+  display: inline;
+}
+
+/* end header section */
+
+/* navigation section */
+.navbar {
+  background-color: gray;
+  overflow: auto;
+}
+
+.navbar li, footer li{
+  list-style: none;
+  display: inline-block;
+}
+.nav-left {
+  float: left;
+}
+.nav-right {
+   float: right;
+}
+
+a {
+  text-decoration: none;
+  color: #1d60a1;
+}
+
+a:visited {
+  color: #1d60a1;
+}
+/* end navigation section */
+
+/* footer section */
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  text-align: center;
+}
