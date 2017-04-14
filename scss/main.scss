@@ -1,1 +1,87 @@
+$primary-color: #1d60a1;
+$header-font: Raleway, sans-serif;
+$body-font: Bitter, Arial, sans-serif;
+/*
+  Project: CIS-130 Final Project
+  Author: Shaun Jordan
+  Filename: main.css
+  Date: 13-APR-2017
+*/
+/*body section */
+html {
+  min-height: 100%;
+  position: relative;
+}
 
+body {
+  margin: 0 0 50px 0;
+  font-family: $body-font;
+}
+/* end body section */
+
+/* header section */
+header {
+  margin: 1em;
+  color: $primary-color;
+}
+h1 {
+  display: inline;
+  font-family: $header-font;
+}
+/* end header section */
+
+/* navigation section */
+.navbar {
+  background-color: #f6f6f6;
+  overflow: auto;
+}
+
+.navbar li {
+  list-style: none;
+  display: inline-block;
+  margin-left: .75em;
+  margin-right: .75em;
+}
+.nav-left {
+  float: left;
+  margin-left: 2.5em;
+}
+.nav-right {
+   float: right;
+   margin-right: 5em;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+}
+
+a:visited {
+  color: #1d60a1;
+}
+/* end navigation section */
+
+/* main content section - home page */
+.main-content {
+  background: pink;
+  width: 75%;
+  height: 300px;
+  margin: 5em auto;
+}
+/* end main content section - home page*/
+
+/* footer section */
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #f6f6f6;
+  color: $primary-color;
+}
+
+footer {
+  p {
+    text-align: center;
+  }
+}

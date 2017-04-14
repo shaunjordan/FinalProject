@@ -11,36 +11,44 @@ html {
 }
 
 body {
-  margin-bottom: 50px;
+  margin: 0 0 50px 0;
+  font-family: Bitter, Arial, sans-serif;
 }
-/* end body section */
 
+/* end body section */
 /* header section */
 header {
-  margin-bottom: .5em;
+  margin: 1em;
+  color: #1d60a1;
 }
+
 h1 {
-  background: beige;
   display: inline;
+  font-family: Raleway, sans-serif;
 }
 
 /* end header section */
-
 /* navigation section */
 .navbar {
-  background-color: gray;
+  background-color: #f6f6f6;
   overflow: auto;
 }
 
-.navbar li, footer li{
+.navbar li {
   list-style: none;
   display: inline-block;
+  margin-left: .75em;
+  margin-right: .75em;
 }
+
 .nav-left {
   float: left;
+  margin-left: 2.5em;
 }
+
 .nav-right {
-   float: right;
+  float: right;
+  margin-right: 5em;
 }
 
 a {
@@ -51,12 +59,27 @@ a {
 a:visited {
   color: #1d60a1;
 }
-/* end navigation section */
 
+/* end navigation section */
+/* main content section - home page */
+.main-content {
+  background: pink;
+  width: 75%;
+  height: 300px;
+  margin: 5em auto;
+}
+
+/* end main content section - home page*/
 /* footer section */
 footer {
   position: absolute;
   bottom: 0;
   height: 50px;
+  width: 100%;
+  background-color: #f6f6f6;
+  color: #1d60a1;
+}
+
+footer p {
   text-align: center;
 }
