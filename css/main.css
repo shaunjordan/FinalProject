@@ -100,11 +100,13 @@ footer p {
   text-align: center;
 }
 
+/* end footer section */
+/* media query */
 @media screen and (max-width: 765px) {
   #hamburger {
     display: inline-block;
   }
-  .nav-left {
+  .navbar .nav-left li {
     display: none;
   }
 }
