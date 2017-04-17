@@ -50,7 +50,7 @@ h1 {
 
 .nav-left {
   float: left;
-  margin-left: 2.5em;
+  margin-left: 2em;
   padding-top: 7px;
 }
 
@@ -72,7 +72,11 @@ a:visited {
   color: #1d60a1;
 }
 
-#hamburger {
+.nav-mobile {
+  display: none;
+}
+
+#logo-mobile {
   display: none;
 }
 
@@ -103,10 +107,29 @@ footer p {
 /* end footer section */
 /* media query */
 @media screen and (max-width: 765px) {
-  #hamburger {
-    display: inline-block;
+  .nav-mobile {
+    display: block;
+    float: right;
+    margin: .60em 1.5em 0 0;
+    background: transparent;
+    border: none;
+    outline: none;
   }
-  .navbar .nav-left li {
+  .nav-mobile:hover {
+    background: darkgray;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .navbar .nav-left li, .navbar .nav-right li {
+    display: none;
+    border: none;
+  }
+  #logo-mobile {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -5em;
+  }
+  header {
     display: none;
   }
 }
