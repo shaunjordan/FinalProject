@@ -1,11 +1,14 @@
-function buttonClick() {
-document.getElementById("btn").addEventListener("click", navigation, true);
+function navigation() {
+  document.getElementById("btn").onclick = function() {
+      if (document.getElementById("dropdown").className == "showmenu") {
+        document.getElementById("dropdown").className = "";
+      } else {
+        document.getElementById("dropdown").classname = "showmenu";
+      }
+  };
 }
 
-function navigation() {
-  document.getElementById("dropdown").classList.toggle("show");
-}
 
 window.onload = function() {
-  buttonClick();
+  navigation();
 }
