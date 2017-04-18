@@ -38,26 +38,30 @@
     </nav>
 
     <div class="inquiry">
-      <form class="inquiryform" name="inquiryform" action="" autocomplete="on" method="post">
-        <label for="">Name</label>
-        <input type="text" name="" value="">
-        <label for=""></label>
-        <input type="text" name="" value="">
-        <label for=""></label>
-        <input type="text" name="" value="">
-        <label for=""></label>
-        <input type="text" name="" value="">
-        <label for=""></label>
-        <input type="radio" name="" value="">
-        <label for=""></label>
-        <input type="checkbox" name="" value="">
-        <label for=""></label>
-        <input type="checkbox" name="" value="">
-        <label for=""></label>
-        <input type="checkbox" name="" value="">
-        <label for=""></label>
-        <input type="text" name="" value="">
-        <label for=""></label>
+      <form class="inquiryform" name="inquiryform" action="mailto:inquiry@WEBMail.org" autocomplete="on" method="post">
+        <label for="nameinput">Name</label>
+        <input type="text" name="name" id="nameinput" placeholder="Name">
+        <label for="addressinput">Address</label>
+        <input type="text" name="" id="addressinput" value="">
+        <label for="cityinput">City</label>
+        <input type="text" name="" id="cityinput" value="">
+        <label for="stateinput">State</label>
+        <input type="text" name="" id="stateinput" value="">
+        <label for="zipinput">Zip</label>
+        <input type="number" name="" id="zipinput" value="">
+        <p>What is your contact preference?</p>
+        <label for="">Email</label>
+        <input type="radio" name="" id="" value="">
+        <label for="">Phone</label>
+        <input type="radio" name="" id="" value="">
+        <p>What service are you contacting us about?</p>
+        <label for="">Accounting</label>
+        <input type="checkbox" name="" id="" value="">
+        <label for="">Taxes</label>
+        <input type="checkbox" name="" id="" value="">
+        <label for="">Investment</label>
+        <input type="checkbox" name="" id="" value="">
+        <label for="">Additional Information</label>
         <textarea name="name" rows="8" cols="80"></textarea>
         <button type="button" name="button">Submit</button>
       </form>

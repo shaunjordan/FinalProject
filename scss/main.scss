@@ -106,7 +106,6 @@ footer {
   }
 }
 /* end footer section */
-
 /* media query */
 @media screen and (max-width: 765px) {
     .nav-mobile {
@@ -122,20 +121,24 @@ footer {
       border-radius: 2px;
       cursor: pointer;
     }
-    .navbar .nav-left li, .navbar .nav-right li  {
+    .nav-left, .nav-right/*.navbar .nav-right li*/  {
       display: none;
       border: none;
     }
     #logo-mobile {
     display: inline-block;
     vertical-align: middle;
-    margin-left: -5em;
     }
     header {
       display: none;
     }
     .showmenu {
       display: block;
+      text-align: left;
       float: right;
+      width: 60px;
+      top: 5em;
+      left: 20em;
+      background: gray;
     }
 }
