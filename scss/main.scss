@@ -1,4 +1,5 @@
-$primary-color: #1d60a1;
+$primary-color: #fff; /*#1d60a1;*/
+$bar-color: rgba(87, 87, 87, 0.3);
 $header-font: Raleway, sans-serif;
 $body-font: Bitter, Arial, sans-serif;
 /*
@@ -32,7 +33,7 @@ h1 {
 
 /* navigation section */
 .navbar {
-  background-color: #f6f6f6;
+  background-color: $bar-color;
   overflow: auto;
 }
 
@@ -95,7 +96,7 @@ footer {
   bottom: 0;
   height: 50px;
   width: 100%;
-  background-color: #f6f6f6;
+  background-color: $bar-color;
   color: $primary-color;
 }
 
@@ -118,7 +119,7 @@ footer {
     }
     .nav-mobile:hover {
       background: darkgray;
-      border-radius: 10px;
+      border-radius: 2px;
       cursor: pointer;
     }
     .navbar .nav-left li, .navbar .nav-right li  {
