@@ -1,3 +1,4 @@
+/*#1d60a1;*/
 /*
   Project: CIS-130 Final Project
   Author: Shaun Jordan
@@ -19,7 +20,7 @@ body {
 /* header section */
 header {
   margin: 1em;
-  color: #1d60a1;
+  color: #fff;
 }
 
 h1 {
@@ -30,7 +31,7 @@ h1 {
 /* end header section */
 /* navigation section */
 .navbar {
-  background-color: rgba(87, 87, 87, 0.3);
+  background-color: #575757;
   overflow: auto;
 }
 
@@ -61,7 +62,7 @@ h1 {
 
 a {
   text-decoration: none;
-  color: #1d60a1;
+  color: #fff;
 }
 
 .navbar li a:hover {
@@ -69,7 +70,7 @@ a {
 }
 
 a:visited {
-  color: #1d60a1;
+  color: #fff;
 }
 
 .nav-mobile {
@@ -82,6 +83,11 @@ a:visited {
 
 /* end navigation section */
 /* main content section - home page */
+.main-content {
+  height: 100%;
+  background: pink;
+}
+
 .carousel {
   background-image: url("../images/business1.jpeg");
   height: 427px;
@@ -98,8 +104,8 @@ footer {
   bottom: 0;
   height: 50px;
   width: 100%;
-  background-color: rgba(87, 87, 87, 0.3);
-  color: #1d60a1;
+  background-color: #575757;
+  color: #fff;
 }
 
 footer p {
@@ -138,13 +144,17 @@ footer p {
     background: rgba(55, 55, 55, 0.6);
     padding: 0;
     margin: 0;
-    float: right;
     position: absolute;
     width: 100%;
+    transition: all .50s ease;
   }
   .showmenu li {
     display: block;
     list-style: none;
     line-height: 300%;
+    text-align: right;
+  }
+  .showmenu li a {
+    margin-right: .75em;
   }
 }

@@ -7,7 +7,7 @@ $(document).ready(function () {
 
   var viewport = $(window).width();
   if (viewport > 765) {
-    $("#dropdown").removeClass("showmenu").addClass("nav-left");
+    $("#dropdown").removeClass("showmenu");
   }
 
 });

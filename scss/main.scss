@@ -1,5 +1,5 @@
-$primary-color: #1d60a1;
-$bar-color: rgba(87, 87, 87, 0.3);
+$primary-color: #fff; /*#1d60a1;*/
+$bar-color: rgb(87, 87, 87);
 $header-font: Raleway, sans-serif;
 $body-font: Bitter, Arial, sans-serif;
 /*
@@ -71,7 +71,7 @@ color: #000;
 }
 
 a:visited {
-  color: #1d60a1;
+  color: $primary-color;
 }
 .nav-mobile {
   display: none;
@@ -83,6 +83,8 @@ a:visited {
 
 /* main content section - home page */
 .main-content {
+  height: 100%;
+  background: pink;
 }
 .carousel {
   background-image: url("../images/business1.jpeg");
@@ -141,13 +143,17 @@ footer {
       background: rgba(55,55,55,0.6);
       padding: 0;
       margin: 0;
-      float: right;
       position:absolute;
       width: 100%;
+      transition: all .50s ease;
     }
     .showmenu li {
       display: block;
       list-style: none;
-      line-height: 300%
+      line-height: 300%;
+      text-align: right;
+    }
+    .showmenu li a {
+      margin-right: .75em;
     }
 }
