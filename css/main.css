@@ -1,4 +1,3 @@
-/*#1d60a1;*/
 /*
   Project: CIS-130 Final Project
   Author: Shaun Jordan
@@ -20,7 +19,7 @@ body {
 /* header section */
 header {
   margin: 1em;
-  color: #fff;
+  color: #1d60a1;
 }
 
 h1 {
@@ -62,7 +61,7 @@ h1 {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: #1d60a1;
 }
 
 .navbar li a:hover {
@@ -83,11 +82,13 @@ a:visited {
 
 /* end navigation section */
 /* main content section - home page */
-.main-content {
-  background: pink;
-  width: 75%;
-  height: 500px;
-  margin: 5em auto;
+.carousel {
+  background-image: url("../images/business1.jpeg");
+  height: 427px;
+  width: 680px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-size: contain;
 }
 
 /* end main content section - home page*/
@@ -98,7 +99,7 @@ footer {
   height: 50px;
   width: 100%;
   background-color: rgba(87, 87, 87, 0.3);
-  color: #fff;
+  color: #1d60a1;
 }
 
 footer p {
@@ -133,12 +134,17 @@ footer p {
     display: none;
   }
   .showmenu {
-    display: table-column;
-    text-align: center;
-    float: left;
-    width: 80px;
-    top: 15em;
-    left: 20em;
-    background: gray;
+    display: block;
+    background: rgba(55, 55, 55, 0.6);
+    padding: 0;
+    margin: 0;
+    float: right;
+    position: absolute;
+    width: 100%;
+  }
+  .showmenu li {
+    display: block;
+    list-style: none;
+    line-height: 300%;
   }
 }
