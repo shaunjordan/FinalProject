@@ -1,1 +1,144 @@
-html{min-height:100%;position:relative}body{margin:0 0 50px 0;font-family:Bitter,Arial,sans-serif}header{margin:1em;color:#fff}h1{display:inline;font-family:Raleway,sans-serif}.navbar{background-color:rgba(87,87,87,0.3);overflow:auto}.navbar li{list-style:none;display:inline-block}.navbar .nav-left li{margin-left:.75em;margin-right:.75em}.navbar .nav-right li{margin-left:1.25em}.nav-left{float:left;margin-left:2em;padding-top:7px}.nav-right{float:right;margin-right:5em}a{text-decoration:none;color:#fff}.navbar li a:hover{color:#000}a:visited{color:#1d60a1}.nav-mobile{display:none}#logo-mobile{display:none}.main-content{background:pink;width:75%;height:500px;margin:5em auto}footer{position:absolute;bottom:0;height:50px;width:100%;background-color:rgba(87,87,87,0.3);color:#fff}footer p{text-align:center}@media screen and (max-width: 765px){.nav-mobile{display:block;float:right;margin:.60em 1.5em 0 0;background:transparent;border:none;outline:none}.nav-mobile:hover{background:darkgray;border-radius:2px;cursor:pointer}.nav-left,.nav-right{display:none;border:none}#logo-mobile{display:inline-block;vertical-align:middle}header{display:none}.showmenu{display:block;text-align:left;float:right;width:60px;top:5em;left:20em;background:gray}}
+/*#1d60a1;*/
+/*
+  Project: CIS-130 Final Project
+  Author: Shaun Jordan
+  Filename: main.css
+  Date: 13-APR-2017
+*/
+/*body section */
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  margin: 0 0 50px 0;
+  font-family: Bitter, Arial, sans-serif;
+}
+
+/* end body section */
+/* header section */
+header {
+  margin: 1em;
+  color: #fff;
+}
+
+h1 {
+  display: inline;
+  font-family: Raleway, sans-serif;
+}
+
+/* end header section */
+/* navigation section */
+.navbar {
+  background-color: rgba(87, 87, 87, 0.3);
+  overflow: auto;
+}
+
+.navbar li {
+  list-style: none;
+  display: inline-block;
+}
+
+.navbar .nav-left li {
+  margin-left: .75em;
+  margin-right: .75em;
+}
+
+.navbar .nav-right li {
+  margin-left: 1.25em;
+}
+
+.nav-left {
+  float: left;
+  margin-left: 2em;
+  padding-top: 7px;
+}
+
+.nav-right {
+  float: right;
+  margin-right: 5em;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar li a:hover {
+  color: #000;
+}
+
+a:visited {
+  color: #1d60a1;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+#logo-mobile {
+  display: none;
+}
+
+/* end navigation section */
+/* main content section - home page */
+.main-content {
+  background: pink;
+  width: 75%;
+  height: 500px;
+  margin: 5em auto;
+}
+
+/* end main content section - home page*/
+/* footer section */
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(87, 87, 87, 0.3);
+  color: #fff;
+}
+
+footer p {
+  text-align: center;
+}
+
+/* end footer section */
+/* media query */
+@media screen and (max-width: 765px) {
+  .nav-mobile {
+    display: block;
+    float: right;
+    margin: .60em 1.5em 0 0;
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+  .nav-mobile:hover {
+    background: darkgray;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  .nav-left, .nav-right {
+    display: none;
+    border: none;
+  }
+  #logo-mobile {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  header {
+    display: none;
+  }
+  .showmenu {
+    display: table-column;
+    text-align: center;
+    float: left;
+    width: 80px;
+    top: 15em;
+    left: 20em;
+    background: gray;
+  }
+}
