@@ -9,7 +9,6 @@ $(document).ready(function () {
   if (viewport > 765) {
     $("#dropdown").removeClass("showmenu");
   }
-
 });
 
 
