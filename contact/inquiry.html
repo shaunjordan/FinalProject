@@ -49,10 +49,8 @@
             <li class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="50px" data-layout="button" data-action="like" data-size="large" data-show-faces="false" data-share="false" style="vertical-align:top;zoom:1;*display:inline"></li>
           </ul>
     </nav> <!-- end navigation section -->
-    <!--
-      Main page content goes here- welcome and carousel
-    -->
-
+      <h2>Submit An Inquiry</h2>
+      <div class="form-container">
       <form class="inquiryform" name="inquiryform" action="mailto:inquiry@WEBMail.org" autocomplete="on" method="post">
         <!-- User input section uses label.userinfo and .user-input in CSS file -->
         <div>
@@ -110,15 +108,15 @@
         </label>
       </div>
         <div>
-        <label for="additionalinfo">Additional Information</label>
-        <textarea id="additionalinfo" name="name" rows="8" cols="60"></textarea>
+        <label for="additionalinfo">Additional Information:</label>
+        <textarea id="additionalinfo" name="additionalinfo" rows="8" cols="60"></textarea>
       </div>
 
       <div>
-        <button type="submit" name="button">Submit</button>
+        <button class="inquiry-btn" type="submit" name="button">Submit</button>
       </div>
       </form>
-
+    </div>
     <footer>
       <p>&copy; Shaun Jordan, CIS 130 – SP16</p>
     </footer>

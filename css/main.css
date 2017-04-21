@@ -106,25 +106,35 @@ a:visited {
 }
 
 /* end main content section - home page*/
-/* inquiry form section */
-form {
+/* contact page inquiry form section */
+h2 {
+  text-align: center;
+}
+.contact-info {
+  width: 75%;
+  background: pink;
+}
+iframe {
+  float: right;
+}
+.form-container {
   margin: 2em auto 0;
   width: 450px;
   padding: 2em;
   border: 2px solid #000;
   border-radius: 5px;
 }
-
 label.userinfo {
   display: inline-block;
   width: 100px;
   text-align: right;
+  margin-left: -1.25em;
 }
 
 .user-input {
   width: 300px;
   margin-top: .75em;
-  height: 25px;
+  height: 30px;
   padding-left: 5px;
 }
 
@@ -139,7 +149,36 @@ textarea, .user-input {
   border-radius: 2px;
 }
 
-/* end inquiry form section*/
+.inquiry-btn {
+  display: inline-block;
+  padding: 8px 14px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  font-size: 16px;
+  box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.4);
+  outline: none;
+  margin-top: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.inquiry-btn:hover {
+  box-shadow: 0 17px 10px 0 rgba(0, 0, 0, 0.2);
+  transform: translate(0, -5px);
+}
+
+/* end contact and inquiry form section*/
+/* partner info table */
+table {
+  margin: 2em auto 0;
+}
+table, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+/* end partner info table*/
+
 /* footer section */
 footer {
   position: absolute;
