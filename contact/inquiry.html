@@ -7,7 +7,7 @@
       Filename: inquiry.html
       Date: 13-APR-2017
     -->
-    <title>Winter, Edwards, &amp; Boyd</title>
+    <title>Winter, Edwards, &amp; Boyd Inquiry</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- font awesome here -->
@@ -52,45 +52,72 @@
     <!--
       Main page content goes here- welcome and carousel
     -->
-    <div class="inquiry">
+
       <form class="inquiryform" name="inquiryform" action="mailto:inquiry@WEBMail.org" autocomplete="on" method="post">
-        <label for="nameinput">Name</label>
-        <input type="text" name="name" id="nameinput" placeholder="Name">
-        <label for="addressinput">Address</label>
-        <input type="text" name="address" id="addressinput" value="">
-        <label for="cityinput">City</label>
-        <input type="text" name="city" id="cityinput" value="">
-        <label for="stateinput">State</label>
-        <input type="text" name="state" id="stateinput" value="">
-        <label for="zipinput">Zip</label>
-        <input type="text" name="zip" id="zipinput" value="">
-        <label for="emailinput">Email</label>
-        <input type="email" name="email" id="emailinput" value="">
-        <label for="phoneinput">Phone Number</label>
-        <input type="text" name="phone" id="phoneinput" value="">
-        <p>What is your contact preference?</p>
-        <label for="">Email</label>
-        <input type="radio" name="preference" id="" value="">
-        <label for="">Phone</label>
-        <input type="radio" name="preference" id="" value="">
-        <p>What service are you contacting us about?</p>
-        <label for="">
+        <!-- User input section uses label.userinfo and .user-input in CSS file -->
+        <div>
+        <label class="userinfo" for="nameinput">Name:</label>
+        <input type="text" name="name" class="user-input" id="nameinput" placeholder="Name"><br>
+      </div>
+        <div>
+        <label class="userinfo" for="addressinput">Address:</label>
+        <input type="text" name="address" class="user-input" id="addressinput" placeholder="Address">
+      </div>
+        <div>
+        <label class="userinfo" for="cityinput">City:</label>
+        <input type="text" name="city" class="user-input" id="cityinput" placeholder="City">
+      </div>
+        <div>
+        <label class="userinfo" for="stateinput">State:</label>
+        <input type="text" name="state" class="user-input" id="stateinput" placeholder="State">
+      </div>
+        <div>
+        <label class="userinfo" for="zipinput">Zip:</label>
+        <input type="text" name="zip" class="user-input" id="zipinput" placeholder="Zip Code">
+      </div>
+        <div>
+        <label class="userinfo" for="emailinput">Email:</label>
+        <input type="email" name="email" class="user-input" id="emailinput" placeholder="example@email.com">
+      </div>
+        <div>
+        <label class="userinfo" for="phoneinput">Phone:</label>
+        <input type="text" name="phone" class="user-input" id="phoneinput" placeholder="(555) 555-5555">
+      </div>
+      <!-- end user input -->
+        <p>How should we contact you?</p>
+        <div>
+        <label for="email">Email</label>
+        <input type="radio" name="contact-preference" id="email" value="email">
+      </div>
+        <div>
+        <label for="phone">Phone</label>
+        <input type="radio" name="contact-preference" id="phone" value="phone">
+      </div>
+        <p>Select the service you're inquiry about:</p>
+
+        <div class="check">
+        <label for="accounting">
         <input type="checkbox" name="service" id="accounting" value="accounting">
         Accounting
         </label>
-        <label for="">
+        <label for="taxes">
         <input type="checkbox" name="service" id="taxes" value="taxes">
         Taxes
         </label>
-        <label for="">
+        <label for="investment">
         <input type="checkbox" name="service" id="investment" value="investment">
         Investment
         </label>
-        <label for="">Additional Information</label>
-        <textarea name="name" rows="8" cols="80"></textarea>
-        <button type="button" name="button">Submit</button>
+      </div>
+        <div>
+        <label for="additionalinfo">Additional Information</label>
+        <textarea id="additionalinfo" name="name" rows="8" cols="60"></textarea>
+      </div>
+
+      <div>
+        <button type="submit" name="button">Submit</button>
+      </div>
       </form>
-    </div>
 
     <footer>
       <p>&copy; Shaun Jordan, CIS 130 – SP16</p>
