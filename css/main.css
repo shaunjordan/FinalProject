@@ -110,13 +110,18 @@ a:visited {
 h2 {
   text-align: center;
 }
+
 .contact-info {
-  width: 75%;
+  width: 800px;
   background: pink;
+  line-height: 200%;
+  margin: 0 auto;
 }
+
 iframe {
   float: right;
 }
+
 .form-container {
   margin: 2em auto 0;
   width: 450px;
@@ -124,6 +129,7 @@ iframe {
   border: 2px solid #000;
   border-radius: 5px;
 }
+
 label.userinfo {
   display: inline-block;
   width: 100px;
@@ -172,13 +178,13 @@ textarea, .user-input {
 table {
   margin: 2em auto 0;
 }
+
 table, td {
   border: 1px solid black;
   border-collapse: collapse;
 }
 
 /* end partner info table*/
-
 /* footer section */
 footer {
   position: absolute;

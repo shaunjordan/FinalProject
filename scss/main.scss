@@ -1,7 +1,4 @@
-$primary-color: #fff; /*#1d60a1;*/
-$bar-color: rgb(87, 87, 87);
-$header-font: Raleway, sans-serif;
-$body-font: Bitter, Arial, sans-serif;
+/*#1d60a1;*/
 /*
   Project: CIS-130 Final Project
   Author: Shaun Jordan
@@ -10,16 +7,17 @@ $body-font: Bitter, Arial, sans-serif;
 */
 /*body section */
 html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
+
 body {
-  font-family: $body-font;
+  font-family: Bitter, Arial, sans-serif;
   background: gray;
 }
-/* end body section */
 
+/* end body section */
 /* header section
 header {
   margin: 1em;
@@ -30,10 +28,9 @@ h1 {
   font-family: $header-font;
 }
 end header section */
-
 /* navigation section */
 .navbar {
-  background-color: $bar-color;
+  background-color: #575757;
   font-size: 1.2em;
   overflow: auto;
 }
@@ -57,31 +54,34 @@ end header section */
   margin-left: .25em;
   padding-top: 7px;
 }
+
 .nav-right {
-   float: right;
-   margin-right: 3em;
+  float: right;
+  margin-right: 3em;
 }
 
 a {
   text-decoration: none;
-  color: $primary-color;
+  color: #fff;
 }
 
 .navbar li a:hover {
-color: #000;
+  color: #000;
 }
 
 a:visited {
-  color: $primary-color;
+  color: #fff;
 }
+
 .nav-mobile {
   display: none;
 }
+
 #logo-mobile {
   display: none;
 }
-/* end navigation section */
 
+/* end navigation section */
 /* main content section - home page */
 .main-content {
   /*box-sizing: border-box;*/
@@ -89,6 +89,7 @@ a:visited {
   position: relative;
   min-height: 100%;
 }
+
 .carousel {
   background-image: url("../images/business1.jpeg");
   height: 427px;
@@ -97,16 +98,26 @@ a:visited {
   margin: 0 auto;
   background-size: contain;
 }
+
 .test {
   width: 75%;
   margin: 0 auto;
   padding-top: 25px;
 }
-/* end main content section - home page*/
 
-/* inquiry form section */
+/* end main content section - home page*/
+/* contact page inquiry form section */
 h2 {
   text-align: center;
+}
+.contact-info {
+  width: 800px;
+  background: pink;
+  line-height: 200%;
+  margin: 0 auto;
+}
+iframe {
+  float: right;
 }
 .form-container {
   margin: 2em auto 0;
@@ -130,12 +141,14 @@ label.userinfo {
 .check {
   margin-bottom: 1.5em;
 }
+
 textarea, .user-input {
   outline: none;
   border-style: solid;
   border: none;
   border-radius: 2px;
 }
+
 .inquiry-btn {
   display: inline-block;
   padding: 8px 14px;
@@ -146,20 +159,26 @@ textarea, .user-input {
   outline: none;
   margin-top: 10px;
   align-items: center;
+  cursor: pointer;
 }
+
 .inquiry-btn:hover {
   box-shadow: 0 17px 10px 0 rgba(0, 0, 0, 0.2);
   transform: translate(0, -5px);
 }
-/* end  inquiry form section*/
 
+/* end contact and inquiry form section*/
 /* partner info table */
+table {
+  margin: 2em auto 0;
+}
 table, td {
   border: 1px solid black;
   border-collapse: collapse;
 }
 
 /* end partner info table*/
+
 /* footer section */
 footer {
   position: absolute;
@@ -167,57 +186,56 @@ footer {
   left: 0;
   height: 50px;
   width: 100%;
-  background-color: $bar-color;
-  color: $primary-color;
+  background-color: #575757;
+  color: #fff;
 }
 
-footer {
-  p {
-    text-align: center;
-  }
+footer p {
+  text-align: center;
 }
+
 /* end footer section */
 /* media query */
 @media screen and (max-width: 765px) {
-    .nav-mobile {
-      display: block;
-      float: right;
-      margin: .60em 1.5em 0 0;
-      background: transparent;
-      border: none;
-      outline: none;
-    }
-    .nav-mobile:hover {
-      background: darkgray;
-      border-radius: 2px;
-      cursor: pointer;
-    }
-    .nav-left, .nav-right/*.navbar .nav-right li*/  {
-      display: none;
-      border: none;
-    }
-    #logo-mobile {
+  .nav-mobile {
+    display: block;
+    float: right;
+    margin: .60em 1.5em 0 0;
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+  .nav-mobile:hover {
+    background: darkgray;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  .nav-left, .nav-right {
+    display: none;
+    border: none;
+  }
+  #logo-mobile {
     display: inline-block;
     vertical-align: middle;
-    }
-    header {
-      display: none;
-    }
-    .showmenu {
-      display: block;
-      background: rgba(55,55,55,0.6);
-      padding: 0;
-      margin: 0;
-      position:absolute;
-      width: 100%;
-    }
-    .showmenu li {
-      display: block;
-      list-style: none;
-      line-height: 300%;
-      text-align: right;
-    }
-    .showmenu li a {
-      margin-right: .75em;
-    }
+  }
+  header {
+    display: none;
+  }
+  .showmenu {
+    display: block;
+    background: rgba(55, 55, 55, 0.6);
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+  }
+  .showmenu li {
+    display: block;
+    list-style: none;
+    line-height: 300%;
+    text-align: right;
+  }
+  .showmenu li a {
+    margin-right: .75em;
+  }
 }
