@@ -106,19 +106,33 @@ a:visited {
 }
 
 /* end main content section - home page*/
+/* about us section */
+.about-content {
+  width: 25%;
+  display: table-cell;
+  padding: 3em;
+}
+
+/* end about us section*/
 /* contact page inquiry form section */
 h2 {
   text-align: center;
 }
 
-.contact-info {
-  width: 800px;
-  background: pink;
-  line-height: 200%;
+.container {
+  width: 700px;
   margin: 0 auto;
+  overflow: auto;
+}
+
+.contact-info {
+  width: 250px;
+  line-height: 200%;
+  float: left;
 }
 
 iframe {
+  display: block;
   float: right;
 }
 
