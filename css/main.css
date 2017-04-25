@@ -106,11 +106,28 @@ a:visited {
 }
 
 /* end main content section - home page*/
-/* about us section */
+/* about us and subpages section */
 .about-content {
   width: 25%;
   display: table-cell;
   padding: 3em;
+}
+
+/*.community {
+  display: table-cell;
+  margin: 0 auto;
+  width: 25%;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid black;
+}
+.community iframe {
+  align-content: center;
+}*/
+.community {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /* end about us section*/
@@ -120,20 +137,21 @@ h2 {
 }
 
 .container {
-  width: 700px;
-  margin: 0 auto;
+  width: 100%;
   overflow: auto;
 }
 
 .contact-info {
-  width: 250px;
+  width: 260px;
   line-height: 200%;
   float: left;
+  margin-left: 10%;
 }
 
-iframe {
+iframe.map {
   display: block;
   float: right;
+  margin-right: 5%;
 }
 
 .form-container {
@@ -257,5 +275,14 @@ footer p {
   }
   .showmenu li a {
     margin-right: .75em;
+  }
+  .about-content {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding-left: 10px;
+  }
+  iframe.map {
+    width: 85%;
   }
 }
