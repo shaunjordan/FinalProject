@@ -1,3 +1,5 @@
+$body-font: "Lato, Arial, sans-serif";
+
 /*#1d60a1;*/
 /*
   Project: CIS-130 Final Project
@@ -13,7 +15,7 @@ html, body {
 }
 
 body {
-  font-family: Bitter, Arial, sans-serif;
+  font-family: $body-font;
   background: gray;
 }
 
@@ -31,7 +33,7 @@ end header section */
 /* navigation section */
 .navbar {
   background-color: #575757;
-  font-size: 1.2em;
+  font-size: 1.35em;
   overflow: auto;
 }
 
@@ -98,15 +100,15 @@ a:visited {
   margin: 0 auto;
   background-size: contain;
 }
-
-.test {
-  width: 75%;
-  margin: 0 auto;
-  padding-top: 25px;
+.bars {
+  display: none;
 }
-
 /* end main content section - home page*/
 /* services section */
+.page-header {
+    width: 65%;
+    margin: 0 auto;
+}
 .services {
   width: 65%;
   margin: 0 auto;
@@ -121,7 +123,6 @@ blockquote {
   float: right;
   box-shadow: 2px 2px 15px #ccc;
   border-left: 5px solid blue;
-
 }
 cite {
   text-align: right;
@@ -131,7 +132,7 @@ cite {
 .about-content {
   width: 25%;
   display: table-cell;
-  padding: 3em;
+  padding: 2em;
 }
 .community {
   width: 500px;
@@ -139,18 +140,63 @@ cite {
   text-align: center;
   padding-top: 15px;
 }
+/* partner info table */
+table {
+  margin: 2em auto 0;
+  th {
+    font-size: 1.35em;
+  }
+}
+table, td {
+  border: none;
+  border-collapse: collapse;
+}
+td {
+  padding: 25px;
+  text-align: center;
+}
+td img {
+  border-radius: 5px;
+}
+table {
+  ul {
+    list-style: none;
+    text-align: left;
+  }
+  li {
+    line-height: 145%;
+    font-size: 1.1em;
+  }
+  span {
+    font-size: 1.48em;
+    text-decoration: underline;
+  }
+}
+#office {
+  display: block;
+}
+#history {
+  display: block;
+  width: 75%;
+  text-align: justify;
+  margin: 0 auto;
+}
 /* end about us section*/
 /* contact page inquiry form section */
-h2 {
+h1, h2 {
   text-align: center;
 }
 .container {
-  width: 100vw;
+  width: 100%;
   overflow: auto;
+}
+.box {
+  width: 80%;
+  margin: 1.5em auto;
 }
 .contact-info {
   width: 260px;
-  line-height: 200%;
+  line-height: 165%;
   float: left;
   margin-left: 10%;
 }
@@ -204,22 +250,6 @@ textarea, .user-input {
   transform: translate(0, -5px);
 }
 /* end contact and inquiry form section*/
-/* partner info table */
-table {
-  margin: 2em auto 0;
-}
-table, td {
-  border: none;
-  border-collapse: collapse;
-}
-td {
-  padding: 25px;
-  text-align: center;
-}
-td img {
-  border-radius: 5px;
-}
-/* end partner info table*/
 
 /* footer section */
 footer {
