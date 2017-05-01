@@ -93,12 +93,16 @@ a:visited {
 }
 
 .carousel {
-  background-image: url("../images/business1.jpeg");
-  height: 427px;
-  width: 680px;
-  background-repeat: no-repeat;
+  height: 350px;
+  width: 100%;
   margin: 0 auto;
-  background-size: contain;
+  background: blue;
+  overflow: auto;
+}
+.sliding img {
+  height: 350px;
+  float: right;
+  margin-right: 5em;
 }
 .bars {
   display: none;
@@ -174,10 +178,11 @@ table {
 }
 #office {
   display: block;
+  margin: 0 auto 1.5em;
 }
 #history {
   display: block;
-  width: 75%;
+  width: 50%;
   text-align: justify;
   margin: 0 auto;
 }
@@ -316,7 +321,13 @@ footer p {
     margin: 0 auto;
     box-sizing: border-box;
   }
+  .community {
+    width: auto;
+  }
   iframe.map {
     width: 85%;
+  }
+  #office {
+    width: 100%;
   }
 }
