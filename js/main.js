@@ -5,10 +5,25 @@ $(document).ready(function () {
     $("#dropdown").toggleClass("showmenu");
   });
 
+  //removes showmenu if screen > 765
   var viewport = $(window).width();
   if (viewport > 765) {
     $("#dropdown").removeClass("showmenu");
   }
+
+  //cycles through background-images
+  function cycle() {
+    $(".sliding").delay(5000).fadeOut(2000, function(){
+      $(".sliding").css("background-image", "url('../images/tab.jpg')");
+      $(".sliding").fadeIn(2000, function() {
+        $(".sliding").delay(5000).fadeOut(1000, function() {
+          $(".sliding").css("background-image", "url('../images/contact.jpg')");
+          $(".sliding").fadeIn(2000, cycle);
+        });
+      });
+    });
+  }
+  cycle();
 });
 
 
