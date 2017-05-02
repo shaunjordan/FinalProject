@@ -10,9 +10,25 @@ $(document).ready(function () {
   if (viewport > 765) {
     $("#dropdown").removeClass("showmenu");
   }
+  var imageNumber = 0;
+  var images = [];
+  var time = 3000;
+
+  images[0] = "../images/welcome.jpg";
+  images[1] = "../images/tab.jpg";
+  images[2] = "../images/expert.jpg";
+  images[3] = "../images/contact.jpg";
+
+  function changeImage() {
+    $(".sliding").css("background-image", "url('"+ images[imageNumber] +"')");
+    imageNumber++;
+    if (imageNumber >= images.length)
+      imageNumber = 0;
+    setInterval("changeImage()", time);
+  }
 
   //cycles through background-images
-  function cycle() {
+  /*function cycle() {
     $(".sliding").delay(5000).fadeOut(2000, function(){
       $(".sliding").css("background-image", "url('../images/tab.jpg')");
       $(".sliding").fadeIn(2000, function() {
@@ -23,7 +39,7 @@ $(document).ready(function () {
       });
     });
   }
-  cycle();
+  cycle();*/
 });
 
 
