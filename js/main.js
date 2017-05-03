@@ -42,7 +42,9 @@ $(document).ready(function () {
   cycle();*/
 });
 
-
+/*
+http://stackoverflow.com/questions/5977837/jquery-loop-through-different-backgrounds
+*/
 
 
 // Below is first attempt code in pure JS for mobile navigation dropdown
