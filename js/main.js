@@ -10,61 +10,40 @@ $(document).ready(function () {
   if (viewport > 765) {
     $("#dropdown").removeClass("showmenu");
   }
-  var imageNumber = 0;
-  var images = [];
-  var time = 3000;
-
-  images[0] = "../images/welcome.jpg";
-  images[1] = "../images/tab.jpg";
-  images[2] = "../images/expert.jpg";
-  images[3] = "../images/contact.jpg";
-
-  function changeImage() {
-    $(".sliding").css("background-image", "url('"+ images[imageNumber] +"')");
-    imageNumber++;
-    if (imageNumber >= images.length)
-      imageNumber = 0;
-    setInterval("changeImage()", time);
-  }
 
   //cycles through background-images
-  /*function cycle() {
-    $(".sliding").delay(5000).fadeOut(2000, function(){
-      $(".sliding").css("background-image", "url('../images/tab.jpg')");
-      $(".sliding").fadeIn(2000, function() {
-        $(".sliding").delay(5000).fadeOut(1000, function() {
-          $(".sliding").css("background-image", "url('../images/contact.jpg')");
-          $(".sliding").fadeIn(2000, cycle);
-        });
-      });
-    });
-  }
-  cycle();*/
+  //sets css values
+
+  var i = 0;
+  var time = setInterval(changeImg, 2000);
+  function changeImg(){
+   //background images
+   var images = ["./images/welcome.jpg","./images/tab.jpg","./images/expert.jpg", "./images/contact.jpg"];
+  $('.sliding').css('background', 'url("' + images[i] + '")' + 'no-repeat');
+  $('.sliding').css('background-size', 'cover');
+    if(i == images.length -1){
+         i = 0;
+    }
+    else{
+        i++;
+    }
+  } //end of changeImg()
+    //codesnippet modified from
+    //http://stackoverflow.com/questions/5977837/jquery-loop-through-different-backgrounds
+  //var classes = ["covertext1","covertext2","covertext3","covertext4"];
+  //function covertextActive(){
+  //  for (var i = 0; i <= classes.legth; i++) {
+  //    $(classes[i]).toggleClass('active');
+  //  }
+
+
+    //if(){
+    //  $(classes[i]).toggleClass("active")
+    //}
+
+  //end covertextActive()
+
 });
 
-/*
-http://stackoverflow.com/questions/5977837/jquery-loop-through-different-backgrounds
-*/
 
-
-// Below is first attempt code in pure JS for mobile navigation dropdown
-//It's not pretty but I am leaving it here for my own learning purposes
-/*function navigation() {
-  document.getElementById("btn").onclick = function() {
-      if (document.getElementById("dropdown").className == "showmenu") {
-        document.getElementById("dropdown").className = "";
-      } else {
-        document.getElementById("dropdown").classname = "showmenu";
-      }
-  };
-}
-
-
-window.onload = function() {
-  navigation();
-}
-*/
-/*function toggleMenu() {
-  document.getElementById("dropdown").classList.toggle("nav-left");
-  document.getElementById("dropdown").classList.toggle("showmenu");
-}*/
+//http://stackoverflow.com/questions/21909709/add-dynamic-class-to-ul-li-with-set-interval-timing
