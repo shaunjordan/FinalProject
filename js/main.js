@@ -1,5 +1,6 @@
 //jQuery
 $(document).ready(function () {
+  $(".covertext").addClass("activecover");
   $("#btn").click(function() {
     //$("#dropdown").toggleClass("nav-left");
     $("#dropdown").toggleClass("showmenu");
@@ -11,11 +12,9 @@ $(document).ready(function () {
     $("#dropdown").removeClass("showmenu");
   }
 
-  //cycles through background-images
-  //sets css values
-
+  /*/cycles through background-images
   var i = 0;
-  var time = setInterval(changeImg, 2000);
+  var time = setInterval(changeImg, 6000);
   function changeImg(){
    //background images
    var images = ["./images/welcome.jpg","./images/tab.jpg","./images/expert.jpg", "./images/contact.jpg"];
@@ -30,20 +29,13 @@ $(document).ready(function () {
   } //end of changeImg()
     //codesnippet modified from
     //http://stackoverflow.com/questions/5977837/jquery-loop-through-different-backgrounds
-  //var classes = ["covertext1","covertext2","covertext3","covertext4"];
-  //function covertextActive(){
-  //  for (var i = 0; i <= classes.legth; i++) {
-  //    $(classes[i]).toggleClass('active');
-  //  }
-
-
-    //if(){
-    //  $(classes[i]).toggleClass("active")
-    //}
-
-  //end covertextActive()
+  var count = -1;
+  function addClass(){
+  var covertext = $(".covertext");
+  var coverLength = covertext.length - 1;
+  count < coverLength ? count++ : count = 0;
+  covertext.removeClass("activecover").eq(count).addClass("activecover");
+  }
+  setInterval(addClass, 6000);*/
 
 });
-
-
-//http://stackoverflow.com/questions/21909709/add-dynamic-class-to-ul-li-with-set-interval-timing

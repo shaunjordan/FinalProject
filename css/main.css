@@ -13,7 +13,7 @@ html, body {
 }
 
 body {
-  background: rgba(235, 229, 223, 0.1);
+  background: #fff;
 }
 
 /* end body section */
@@ -35,9 +35,7 @@ header div {
   overflow: auto;
   font-weight: bold;
   letter-spacing: 1px;
-  border-bottom: 2px solid #000099;
-  border-top: 2px solid #000099;
-  margin-top: 1.2em;
+  border-bottom: 2px solid #0000ff;
 }
 
 .navbar li {
@@ -71,12 +69,6 @@ a {
   padding: 4px 6px;
 }
 
-.navbar li a:hover {
-  color: #fff;
-  border: 2px solid #000099;
-  background: #ada9a5;
-}
-
 a:visited {
   color: #000099;
 }
@@ -96,40 +88,77 @@ a:visited {
   padding: 0 0 100px;
   position: relative;
   min-height: 100%;
-}
-
-.carousel {
-  height: 800px;
-  width: 100%;
-  margin: 0 auto;
   overflow: hidden;
 }
 
 .sliding {
   background: url("../images/welcome.jpg");
   background-repeat: no-repeat;
-  width: 100%;
-  height: 635px;
   background-size: cover;
+  width: 100%;
+  height: 525px;
+  border-top: 1px solid #0000ff;
+}
+
+.tech {
+  background: url("../images/tab.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 525px;
+}
+
+.contact {
+  background: url("../images/contact.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 525px;
+  border-bottom: 3px solid #0000ff;
+}
+
+.tech, .contact {
+  border-top: 3px solid #0000ff;
 }
 
 .covertext {
-  color: white;
+  color: #000;
   position: relative;
   top: 75px;
   left: 50px;
   font-size: 24px;
-  text-shadow: 5px 5px 5px #000;
   display: none;
+  margin-top: -1.5em;
 }
 
 .covertext h1 {
   text-align: left;
   letter-spacing: 1.5px;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
-.covertext.active {
+.covertext > p {
+  width: 50%;
+}
+
+.covertext a {
+  padding: 5px;
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+
+.activecover {
   display: block;
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .bars {
@@ -183,6 +212,9 @@ cite {
 
 hr {
   width: 50%;
+  height: 1px;
+  background: #000099;
+  border-width: 0;
 }
 
 iframe {
@@ -253,6 +285,7 @@ table span {
 /* contact page inquiry form section */
 h1, h2 {
   text-align: center;
+  color: #000099;
 }
 
 .container {
@@ -315,7 +348,7 @@ label.userinfo {
 textarea, .user-input {
   outline: none;
   border-style: solid;
-  border: none;
+  border: 2px solid #0000ff;
   border-radius: 2px;
 }
 
@@ -399,7 +432,7 @@ footer p {
   .showmenu li a {
     margin-right: .75em;
   }
-  .sliding, .carousel {
+  .sliding, .tech, .contact {
     display: none;
   }
   .bars {
