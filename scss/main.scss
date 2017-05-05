@@ -8,13 +8,13 @@ $end-color: #cfcfcf;
   Author: Shaun Jordan
   Filename: main.css
   Date: 13-APR-2017
+  All images courtesy pexels.com which provides a Creative Commons Zero (CC0) license
 */
 /*body section */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-
 }
 body {
   background: $body-color;
@@ -38,7 +38,9 @@ header div {
   float: right;
   margin: 6.5em 1.5em 0 0;
   vertical-align: bottom;
+  font-family: Arial, sans-serif;
 }
+
 /* end header section */
 /* navigation section */
 .navbar {
@@ -46,7 +48,7 @@ header div {
   overflow: auto;
   font-weight: bold;
   letter-spacing: 1px;
-  border-bottom: 2px solid #0000ff;
+  border-bottom: 2px solid #000099;
 }
 
 .navbar li {
@@ -220,6 +222,9 @@ cite {
   display: table-cell;
   padding: 2em;
 }
+.about-content a:hover {
+  color: #0000ff;
+}
 .community {
   width: 500px;
   margin: 3em auto;
@@ -228,6 +233,7 @@ cite {
 }
 .abouticons {
   text-align: center;
+  color: #000099;
 }
 hr {
   width: 50%;
@@ -336,6 +342,10 @@ label.userinfo {
   width: 100px;
   text-align: right;
   margin-left: -1.25em;
+}
+.userinfo:before {
+  content: "* ";
+  color: red;
 }
 .user-input {
   width: 300px;
@@ -463,6 +473,7 @@ footer p {
     height: 300px;
     background-size: cover;
     margin-top: 1.5em;
+    border-top: 2px solid #0000ff;
   }
   .mtech {
     background: url("../images/tab.jpg");
@@ -484,6 +495,7 @@ footer p {
     width: 100%;
     height: 300px;
     background-size: cover;
+    border-bottom: 2px solid #0000ff;
   }
   .mcovertext {
     color: #000;

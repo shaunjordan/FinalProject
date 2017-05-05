@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="zxx"> <!-- lang zxx included per validator due to Lorem Ipsum-->
   <head>
     <!--
       Project: CIS-130 Final Project
       Author: Shaun Jordan
       Filename: inquiry.html
       Date: 13-APR-2017
+      All images courtesy pexels.com which provides a Creative Commons Zero (CC0) license
     -->
     <title>Winter, Edwards, &amp; Boyd Inquiry</title>
     <meta charset="utf-8">
@@ -13,8 +14,8 @@
     <!-- font awesome here -->
     <link rel="stylesheet" href="../css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="../images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../images/favicon-16x16.png" sizes="16x16" />
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
@@ -64,41 +65,41 @@
         <!-- User input section uses label.userinfo and .user-input in CSS file -->
         <div>
         <label class="userinfo" for="nameinput">Name:</label>
-        <input type="text" name="name" class="user-input" id="nameinput" placeholder="First and Last Name"><br>
+        <input type="text" required name="name" class="user-input" id="nameinput" placeholder="First and Last Name"><br>
       </div>
         <div>
         <label class="userinfo" for="addressinput">Address:</label>
-        <input type="text" name="address" class="user-input" id="addressinput" placeholder="Address">
+        <input type="text" required name="address" class="user-input" id="addressinput" placeholder="Address">
       </div>
         <div>
         <label class="userinfo" for="cityinput">City:</label>
-        <input type="text" name="city" class="user-input" id="cityinput" placeholder="City">
+        <input type="text" required name="city" class="user-input" id="cityinput" placeholder="City">
       </div>
         <div>
         <label class="userinfo" for="stateinput">State:</label>
-        <input type="text" name="state" class="user-input" id="stateinput" placeholder="State">
+        <input type="text" required name="state" class="user-input" id="stateinput" placeholder="State">
       </div>
         <div>
         <label class="userinfo" for="zipinput">Zip:</label>
-        <input type="text" name="zip" class="user-input" id="zipinput" placeholder="Zip Code">
+        <input type="text required" name="zip" class="user-input" id="zipinput" placeholder="Zip Code">
       </div>
         <div>
         <label class="userinfo" for="emailinput">Email:</label>
-        <input type="email" name="email" class="user-input" id="emailinput" placeholder="example@email.com">
+        <input type="email" required name="email" class="user-input" id="emailinput" placeholder="example@email.com">
       </div>
         <div>
         <label class="userinfo" for="phoneinput">Phone:</label>
-        <input type="text" name="phone" class="user-input" id="phoneinput" placeholder="(555) 555-5555">
+        <input type="text" required name="phone" class="user-input" id="phoneinput" placeholder="(555) 555-5555">
       </div>
       <!-- end user input -->
         <p>How should we contact you?</p>
         <div>
         <label for="email">Email</label>
-        <input type="radio" name="contact-preference" id="email" value="email">
+        <input type="radio" required name="contact-preference" id="email" value="email">
       </div>
         <div>
         <label for="phone">Phone</label>
-        <input type="radio" name="contact-preference" id="phone" value="phone">
+        <input type="radio" required name="contact-preference" id="phone" value="phone">
       </div>
         <p>Select the service you're inquiry about:</p>
 
@@ -127,7 +128,7 @@
       </form>
     </div>
     <footer>
-      <p>&copy; Shaun Jordan, CIS 130 – SP16</p>
+      <p>&copy;2017 Shaun Jordan, CIS 130 – SP16</p>
     </footer>
     </div>
   </body>
